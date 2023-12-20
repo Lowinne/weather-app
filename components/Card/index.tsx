@@ -58,18 +58,8 @@ const WeatherCard = (props: any) => {
   const month = monthArray[cityMonth];
   let tempName: any = [];
   let tempValue: any = [];
-  let dateSuffix;
-  switch (cityDate) {
-    case 2:
-      dateSuffix = "nd";
-      break;
-    case 3:
-      dateSuffix = "rd";
-      break;
-    default:
-      dateSuffix = "th";
-  }
-  const fullDate = `${month} ${day} ${cityDate + dateSuffix}`;
+
+  const fullDate = `${day} ${cityDate} ${month}`;
   const unicode = "\u00b0";
 
   //actual data array
@@ -104,7 +94,7 @@ const WeatherCard = (props: any) => {
         h="500px"
         w="400px"
         mt="40px"
-        bgImage="url(./img/cloudy.jpg)"
+        bgImage="url(./img/pexels-pixabay-158163.jpg)"
         bgPosition="bottom"
         borderRadius="2xl"
         shadow="dark-lg"
@@ -151,7 +141,7 @@ const WeatherCard = (props: any) => {
         h="500px"
         w="400px"
         mt="40px"
-        bgImage="url(./img/sunshine.jpg)"
+        bgImage="url(./img/pexels-pixabay-158163.jpg)"
         bgPosition="center"
         borderRadius="2xl"
         shadow="dark-lg"

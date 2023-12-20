@@ -16,7 +16,7 @@ function SearchBar() {
   const handleClick = () => {
     const err = axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=114e5c4f66f4ad750eec3e814c241e3d&units=imperials`
+        `http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=114e5c4f66f4ad750eec3e814c241e3d&units=metric`
       )
       .then((res) => {
         setWeather(res.data);
